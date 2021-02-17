@@ -1,9 +1,8 @@
 #!/bin/bash
 # Backup script ---------------------------------------------------------------------
 
-# TODO: Call functions TODO: check variables in functions/out functions
-# TODO: Better control on parameters
-# TODO: Better control during the execution *
+# To schedule cron execute crontab -e and add such line:
+# 0 2 * * * /path_to_script/task2.sh
 
 #Variables
 OLDEST=$(date -d "now - ${1} days" +"%Y-%m-%d")
